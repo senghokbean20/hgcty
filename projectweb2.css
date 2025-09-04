@@ -1,0 +1,313 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    height: 200vh;
+}
+
+.container > nav{
+    width: 100%;
+    height: 100px;
+    background-color:rgb(62, 9, 223) ;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center ;
+    z-index: 100px;
+    
+}
+
+.container > nav > .title{
+    width: 30%;
+}
+
+.container > nav > .title > h1{
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.container> nav >.menu{
+    width: 50%;
+
+}
+
+.container> nav >.menu > ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.container> nav >.menu > ul > li > a{
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 20px 40px;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.container> nav >.menu > ul > li > a::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    left: 0px;
+   bottom: -2px;
+    background-color:rgb(228, 228, 22) ;
+    transition: all 0.5s ease-in-out;
+}
+
+.container> nav >.menu > ul > li > a:hover{
+    color: rgb(215, 33, 33);
+}
+
+.container> nav >.menu > ul > li > a:hover::after{
+    width: 100%;
+}
+
+
+/* home */
+
+.container>.home{
+    width: 100%;
+    height: 900px;
+    /* background-color: aquamarine; */
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/hd/2989da120242593.60adeb7e781fc.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container>.home>h3{
+    font-size: 50px;
+    color: white;
+}
+
+.container>.home>h2{
+    font-size: 30px;
+    color: white;
+}
+
+.container>.home>p{
+    font-size: 20px;
+    color: white;
+}
+
+.container>.home>a{
+    margin-top: 20px;
+    padding: 30px 50px;
+    border-radius: 40px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.container>.home>a:hover{
+    transform: scale(1.1);
+    color: rgb(17, 229, 144);
+}
+
+/* about */
+.container>.about{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(123, 204, 239);
+}
+
+.container>.profoli{
+    width: 100%;
+    height: 700px;
+    background-color:rgb(8, 245, 245);
+}
+
+
+
+
+.container>.about{
+    width: 100%;
+}
+
+.container>.about>.content{
+    width: 80%;
+    height: 70vh;
+    margin: 50px auto;
+    display: flex;
+}
+
+.container>.about>.content>.img{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container>.about>.content>.img > img{
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    filter: opacity(0.9) drop-shadow(0 0 0 blue);
+    transition: all 0.5s ease-in-out;
+}
+
+.container>.about>.content>.img > img:hover{
+    filter: opacity(1) drop-shadow(0.0.0 white);
+}
+
+.container>.about>.content>.detail{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container>.about>.content>.detail>.list-btn{
+
+}
+
+.container>.about>.content>.detail>.list-btn> button{
+    padding: 15px 30px;
+    background-color: rgb(62, 62, 189);
+    border-radius: 26px;
+    border: 2px solid black;
+    margin: 10px;
+    color: black;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.container>.about>.content>.detail>.list-btn>button:hover{
+    transform: scale(1.1);
+    background-color: rgb(12,12,90);
+    color: white;
+}
+
+
+
+.container>.profoli{
+    width: 100%;
+    height: 1600px;
+}
+
+.container >.profoli>.list-card{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    
+}
+
+.container >.profoli>.list-card>.card{
+    width: 25%;
+    height: 100%;
+    background-color: rgb(21, 166, 239);
+    border-radius: 25px;
+}
+
+.container >.profoli>.list-card>.card:hover> img{
+    filter: opacity(0.8) drop-shadow(0 0 0 blue);
+}
+
+.container >.profoli>.list-card>.card> img{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.container >.profoli>.list-card>.card>.list-btn2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.container >.profoli>.list-card>.card>.list-btn2> button{
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.container >.profoli>.list-card>.card>.list-btn2> button:hover{
+    transform: scale(1.1);
+    background-color: blue;
+    color: black;
+    border: none;
+}
+
+
+.container>.contact{
+    width: 100%;
+    height: 1000px;
+    /* background-color: rgb(0, 255, 115); */
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e69a91ef-dab1-4afd-95fc-b96f3cc531a6/dh4pq2z-8284e11d-9730-46cd-a046-2ecf1ac82b24.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U2OWE5MWVmLWRhYjEtNGFmZC05NWZjLWI5NmYzY2M1MzFhNlwvZGg0cHEyei04Mjg0ZTExZC05NzMwLTQ2Y2QtYTA0Ni0yZWNmMWFjODJiMjQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CXpduX95MvG8DOj_uu8ibUWUvP3dhdufOVp7pwEr8i8);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container>.contact>form{
+    width: 60%;
+    height: 70vh;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+.container>.contact>form>.name{
+    grid-area: 1/1/2/2;
+    /* background-color: aqua; */
+    padding: 20px;
+}
+
+.container>.contact>form>.email{
+    grid-area: 1/2/2/3;
+    /* background-color: rgb(47, 0, 255); */
+    padding: 20px;
+}
+
+.container>.contact>form>.subject{
+    grid-area: 2/1/3/3;
+    /* background-color: rgb(255, 0, 191); */
+    padding: 20px;
+}
+
+.container>.contact>form>.message{
+    grid-area: 3/1/5/3;
+    /* background-color: rgb(21, 255, 0); */
+    padding: 20px;
+}
+
+.container>.contact>form>.send{
+    grid-area: 5/1/6/3;
+    /* background-color: rgb(0, 170, 255); */
+    padding: 20px;
+}
+
+input:focus,textarea:focus{
+    border-color: aqua;
+    box-shadow: 0px 0px 5px blue;
+}
